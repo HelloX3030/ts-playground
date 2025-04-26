@@ -1,7 +1,7 @@
 {
-	"name": "typescript_test",
-	"version": "1.0.0",
-	"main": "index.js",
+	"name": "ts-playground",
+	"version": "0.0.1",
+	"main": "dist/main.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
