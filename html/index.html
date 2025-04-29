@@ -16,7 +16,13 @@
 <body>
 	<h1>Welcome to the Image Gallery</h1>
 
-	<div id="gallery">
+	<form id="image-form">
+		<label id="ImageLabel">Image:</label>
+		<input type="file" id="ImageInput" accept="image/*" required>
+		<button id="ImageButton" type="submit">Add Image</button>
+	</form>
+
+	<div id="Gallery">
 		<!-- Images will be inserted here by JS -->
 	</div>
 
