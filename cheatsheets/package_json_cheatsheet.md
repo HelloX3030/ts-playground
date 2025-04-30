@@ -171,7 +171,39 @@ npm uninstall <package-name>  # Uninstalls a specific package
 
 ---
 
-## 🧰 **Sample `package.json` Setup for a Simple Website**
+## 🛠️ **Dependencies vs DevDependencies**
+
+### 📦 `dependencies`
+- Packages your **application needs at runtime**
+- Will be included when deployed to production
+- Examples: `react`, `express`, `axios`
+- Installed with:
+
+```bash
+npm install <package-name>
+```
+
+---
+
+### 🛠️ `devDependencies`
+- Packages used **only during development**
+- Not included in production builds
+- Examples: `typescript`, `eslint`, `jest`, `vite`
+- Installed with:
+
+```bash
+npm install <package-name> --save-dev
+```
+
+| Use Case                 | `dependencies` | `devDependencies` |
+|--------------------------|----------------|--------------------|
+| Needed at runtime        | ✅              | ❌                 |
+| Used only in development | ❌              | ✅                 |
+| Installed in production  | ✅              | ❌ (unless forced) |
+
+---
+
+## 🛠️ **Sample `package.json` Setup for a Simple Website**
 
 ```json
 {

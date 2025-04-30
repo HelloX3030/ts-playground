@@ -7,10 +7,10 @@
 	<title>My Image Gallery</title>
 
 	<!-- Optional: Link to a CSS file -->
-	<link rel="stylesheet" href="styles.css">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
 
 	<!-- Optional: Set a favicon -->
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 
 <body>
@@ -28,13 +28,14 @@
 		<label id="ImageLabel">Image:</label>
 		<input type="file" id="ImageInput" accept="image/*" required>
 		<button id="ImageButton" type="submit">Add Image</button>
+		<button id="UploadButton">Upload Image</button>
 	</form>
 
 	<div id="Gallery">
 		<!-- Images will be inserted here by JS -->
 	</div>
 
-	<script src="dist/main.js" defer></script>
+	<script type="module" src="dist/main.js" defer></script>
 </body>
 
 </html>
