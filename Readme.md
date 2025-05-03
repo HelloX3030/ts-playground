@@ -3,7 +3,7 @@
 - vite.env.ts Cheat Sheet
 
 # Roadmap
-- Img Gallery Application
-	- Select a Class Type => e. g. Cat, Dog, Fish, Alpaca... All important animals :D
-	- Upload Img
-	- Get Class Data Via Id
+- home.html and animal.html + imgs.html => subpages
+- => Animal.html allows you to select an animal + upload sth and a file + the animal type is the folder or some bullshit like this
+- get files from animal thing
+- Databse example
