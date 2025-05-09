@@ -11,14 +11,31 @@
 <body>
 	<a href="index.html">Home</a>
 	<br />
-	<select id="AnimalSelect">
-		<option value="" disabled selected>Select an animal</option>
-		<option value="alpaca">Alpaca</option>
-		<option value="bird">Bird</option>
-		<option value="cat">Cat</option>
-		<option value="dog">Dog</option>
-		<option value="fish">Fish</option>
-	</select>
+	<form id="AnimalForm">
+		<select id="EnclosureSelect">
+			<option value="" disabled selected>Select an enclosure</option>
+			<option value="SavannahHabitat">Savannah Habitat</option>
+			<option value="DesertDome">Desert Dome</option>
+			<option value="TemperateForestEnclosure">Temperate Forest Enclosure</option>
+			<option value="RainforestCanopyZone">Rainforest Canopy Zone</option>
+			<option value="MountainCliffHabitat">Mountain Cliff Habitat</option>
+		</select>
+		<select id="SpeciesSelect">
+			<option value="" disabled selected>Select an animal</option>
+			<option value="Alpaca">Alpaca</option>
+			<option value="Bird">Bird</option>
+			<option value="Cat">Cat</option>
+			<option value="Dog">Dog</option>
+			<option value="Fish">Fish</option>
+		</select>
+		<input type="text" id="AnimalNameInput" placeholder="Animal Name" required />
+		<input type="number" id="AnimalAgeInput" placeholder="Animal Age" required />
+		<input type="file" id="AnimalImageInput" accept="image/*" required />
+		<button id="UploadButton" type="submit">Upload</button>
+	</form>
+	<div id="AnimalGallery">
+		<!-- Animal images will be inserted here by JS -->
+	</div>
 	<script type="module" src="/src/animals.ts" defer></script>
 </body>
 

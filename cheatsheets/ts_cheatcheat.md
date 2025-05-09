@@ -27,6 +27,25 @@ let ids: number[] = [1, 2, 3];
 let names: Array<string> = ["Alice", "Bob"];
 ```
 
+## ⚠️ var vs let (and const)
+
+- var is function-scoped and can be hoisted (initialized as undefined if accessed before declaration). Avoid using var in modern code.
+- let is block-scoped and not hoisted to the top of its block.
+- const is also block-scoped, but the variable can't be reassigned (though object contents can still change).
+
+```ts
+function example() {
+  if (true) {
+    var x = 10;
+    let y = 20;
+  }
+  console.log(x); // ✅ 10
+  console.log(y); // ❌ Error: y is not defined
+}
+```
+
+✅ Prefer let and const over var. Use const by default unless reassignment is needed.
+
 ---
 
 ## 🧾 Tuples

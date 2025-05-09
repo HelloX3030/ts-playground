@@ -1,8 +1,8 @@
 import { Animal } from "./base";
 
 export class Dog extends Animal {
-	constructor(name: string) {
-		super(name);
+	constructor(name: string, age: number, enclosure: string) {
+		super(name, age, "Dog", enclosure);
 	}
 
 	makeSound(): string {
