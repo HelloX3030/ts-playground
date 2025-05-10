@@ -1,3 +1,6 @@
+# custom
+.env.local
+
 # Logs
 logs
 *.log

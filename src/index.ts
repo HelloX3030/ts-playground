@@ -1,10 +1,8 @@
 // imports
 import { createClient } from '@supabase/supabase-js';
+import * as globals from './globals';
 
-// Supabase client initialization
-const supabaseUrl = 'https://rrpbwwlyhynwsezgsrtu.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJycGJ3d2x5aHlud3NlemdzcnR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwMDIzMzYsImV4cCI6MjA2MTU3ODMzNn0.WXESYh7MdC6Qu0utSc9pMSvNbI5Pc1s92APg7yv3-B0';
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(globals.supabaseUrl, globals.supabaseKey);
 
 // Html Elements
 const gallery = document.getElementById("Gallery") as HTMLDivElement;

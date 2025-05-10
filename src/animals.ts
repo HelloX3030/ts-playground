@@ -39,4 +39,5 @@ upload_button.addEventListener("click", async (e) => {
 	animal.log();
 
 	// Upload to database
+
 });
