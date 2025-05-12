@@ -37,7 +37,6 @@ upload_button.addEventListener("click", async (e) => {
 		return alert("Invalid species selected.");
 
 	animal.log();
-
-	// Upload to database
-
+	alert(animal.makeSound());
+	animal.uploadToDatabase();
 });

@@ -4,7 +4,8 @@
 - Supabse + sql Cheat Sheet => Functions + raw sql + sql tasks/things on the server + policies which data a user can acces... 
 
 # Roadmap
-- vite-env.d => add to envs cheat sheet
+- supabase Authentification System
+- how to write policies => what structure? what do all of this things mean? what possible values are there + what do they mean?
 - Debug build/macros/ifdef things like in c in typescript
 - Databse example
 	=> environment variables + global variables in typescript cheat sheet

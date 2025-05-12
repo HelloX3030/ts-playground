@@ -1,8 +1,5 @@
 // imports
-import { createClient } from '@supabase/supabase-js';
 import * as globals from './globals';
-
-const supabase = createClient(globals.supabaseUrl, globals.supabaseKey);
 
 // Html Elements
 const gallery = document.getElementById("Gallery") as HTMLDivElement;
@@ -38,7 +35,7 @@ upload_button.addEventListener("click", async (e) => {
 		const filePath = `${selectedImage.name}`;
 
 		// Upload the image to Supabase storage
-		const { data, error } = await supabase.storage
+		const { data, error } = await globals.supabase.storage
 			.from('images')
 			.upload(filePath, selectedImage);
 
