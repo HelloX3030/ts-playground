@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Authentification</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+	<a href="index.html">Home</a>
+	<br />
+	<a href="animals.html">Animals</a>
+	<br />
+
+	<form id="AuthForm">
+		<label for="EmailInput">email:</label>
+		<input type="email" id="EmailInput" required />
+		<br />
+		<label for="password">Password:</label>
+		<input type="password" id="PasswordInput" required />
+		<br />
+		<button id="SignInButton" type="submit">Sign In</button>
+		<br />
+		<button id="SignUpButton" type="submit">Sign Up</button>
+		<br />
+		<button id="SignOutButton" type="submit">Sign Out</button>
+		<br />
+		<button id="DeleteAccountButton" type="submit">Delete Account</button>
+		<br />
+		<button id="ResetPasswordButton" type="submit">Reset Password</button>
+		<br />
+		<button id="SendVerificationButton" type="submit">Send Verification Email</button>
+		<br />
+	</form>
+
+	<button id="UserInfoButton" type="button">Get User Info</button>
+	<br />
+	<label id="UserInfoLabel" for="UserInfoButton">User Info:</label>
+	<label id="UserInfo" for="UserInfoButton"></label>
+
+	<script type="module" src="/src/auth.ts" defer></script>
+</body>
+
+</html>
