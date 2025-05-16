@@ -14,12 +14,13 @@ export abstract class Animal {
 
 	async uploadToDatabase(): Promise<void> {
 		const { data, error } = await globals.supabase
-			.from('Animals')
+			.from('animals')
 			.insert([
 				{
 					name: this.name,
 					age: this.age,
 					species: this.species,
+					user_id: globals.getUser()?.id,
 				}
 			]);
 

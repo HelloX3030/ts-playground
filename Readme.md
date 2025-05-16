@@ -8,6 +8,12 @@
 - CheatSheet for things that are in c handled over functions => e. g. stuff like, trim, strjoin, split... and so on
 
 # Roadmap
+- ALTER TABLE animals
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user_id)
+REFERENCES auth.users(id);
+=> also for animal ids... 
+=> SQL Cheat Sheet
 - how to write policies => what structure? what do all of this things mean? what possible values are there + what do they mean?
 - Debug build/macros/ifdef things like in c in typescript
 - Databse example
